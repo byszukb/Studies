@@ -1,1 +1,1 @@
-Plik readme
+Plik readme, edycja
