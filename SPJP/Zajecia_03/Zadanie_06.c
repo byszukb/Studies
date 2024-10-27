@@ -3,11 +3,11 @@
 //rok przestepny - jest liczba podzielna przez 4
 
 int main() {
-    int rok;
+    int year;
 
     printf("Podaj rok: ");
-    scanf("%d", &rok);
-    if (rok % 4 == 0) {
+    scanf("%d", &year);
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
         printf("Rok jest przestepny");
     }
     else {
