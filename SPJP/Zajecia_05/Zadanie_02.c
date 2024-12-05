@@ -14,4 +14,5 @@ int main() {
         result *= a;
     }
     printf("%d", result);
+    return 0;
 }

@@ -11,4 +11,5 @@ int main(){
     }
 
     printf("%d", sumOfSquares);
+    return 0;
 };

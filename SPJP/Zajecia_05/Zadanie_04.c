@@ -7,4 +7,5 @@ int main() {
         array[i] = array[i] * array[i];
         printf("%d\n", array[i]);
     }
+    return 0;
 }
