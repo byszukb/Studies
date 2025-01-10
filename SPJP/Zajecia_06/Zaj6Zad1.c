@@ -9,7 +9,7 @@ int odejmowanie(int a, int b) {
 int mnozenie(int a, int b) {
     return a * b;
 }
-float dzielenie(int a, int b) {
+float dzielenie(float a, float b) {
     return a / b;
 }
 
@@ -39,7 +39,7 @@ int main() {
             printf("Wynik mnozenia to: %d", mnozenie(pierwszaLiczba, drugaLiczba));
         break;
         case 4:
-            printf("Wynik dzielenia to: %d", dzielenie(pierwszaLiczba, drugaLiczba));
+            printf("Wynik dzielenia to: %f", dzielenie(pierwszaLiczba, drugaLiczba));
         break;
     }
 
