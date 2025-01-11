@@ -4,19 +4,19 @@
 
 int n = 0;
 void drzewoBinarne(int arr[]) {
-    float level = log2(n);
+    int level = (int)ceil(log2(n + 1));
     int counter = 0;
     for(int i =0; i <= level; i++) {
-        for(int wciecie = 0; wciecie < level - i; wciecie++) {
-            if(wciecie == 0) {
+        int leadSpace = pow(2, level - 1 - i) -2;
+        for(int wciecie = 0; wciecie <= leadSpace; wciecie++) {
+            printf("  ");
+        }
+        int beetwenSpace = pow(2, level - i) -1;
+        for(int j = 0; j < pow(2,i); j++) {
+            printf("%d", arr[counter]);
+            for(int wciecie = 0; wciecie <= beetwenSpace; wciecie++) {
                 printf("  ");
             }
-            else {
-                printf(" ");
-            }
-        }
-        for(int j = 0; j < pow(2,i); j++) {
-            printf("%d ", arr[counter]);
             counter++;
             if(counter == n) {
                 printf("\n");
